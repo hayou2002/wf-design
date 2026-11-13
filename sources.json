@@ -1,0 +1,366 @@
+{
+  "workflow": "wf-design",
+  "title": "设计工作流",
+  "status": "active",
+  "created": "2026-11-13",
+  "updated": "2026-11-13",
+  "sources": [
+    {
+      "name": "beautify-github-readme",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/beautify-github-readme",
+        "subpath": "skills/beautify-github-readme",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "beautify-github-readme"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ③：纯 SVG 素材（徽章、线条图、README 配图）",
+      "digest": "sha256:0d4dd8431c22485772d50c10b66082b03430f47c41a9c11429f4aa8677aa94d1",
+      "files": {
+        "agents/openai.yaml": "sha256:f43bc40f7fea095d63ebf2abf9fa9d1dc16ffba2159d0919fd1c1bf16ee0955a",
+        "references/content-architecture.md": "sha256:6c915f670819947df2e64d045218afe072d538c418c5b1450d5ab92d755cee0d",
+        "references/github-readme-canvas.md": "sha256:576ce0add01c3e0ea2ff2c39a0a7e59c69d3096c05796b0671527930c56cb49d",
+        "references/hybrid-svg-production.md": "sha256:ab664473785efb609461a73b957f8f69e6ed32730ce11689b6123d9d038b28b1",
+        "references/motion-production.md": "sha256:c9ada426364ee6fd089e434c01d5d34246413d4591421b41e2a5b786b94e895a",
+        "references/project-native-hero.md": "sha256:8630160574d789d04d7f7ef6553a8936a810808a822401982f231a3cc327ef29",
+        "references/showcase-contribution.md": "sha256:b011cb4646719e832286b8e0ad03db38ac9e7a19b80d4c580cc0954b5dbcb567",
+        "references/svg-production.md": "sha256:062da9b8a552b5674ca3e79fbe04c02302d0ee5c6f61a24e3db2e64a61f58198",
+        "references/visual-direction.md": "sha256:09b1d2bf38e375ffa2a1d6b337ce5b649c38a9118d9f4242837e8979f3bb4912",
+        "scripts/audit_readme.py": "sha256:266d4ff92b9cb7ea78b48a2d26ed628940a09ee6d71c74881275567b0d2828ed",
+        "scripts/render_motion_gif.py": "sha256:e7332f450943c6ea604fb724159ecac5826614382f9dbeffe274d8ae68a669b5",
+        "SKILL.md": "sha256:f3854a1ff509d26f44e5e6a7547a3670e1d2733987d6b300ddcc68c1a17aa14b"
+      }
+    },
+    {
+      "name": "citycraft",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/citycraft",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "citycraft"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ①：有风格的完整落地页（导航到页脚），自带城市风格库",
+      "digest": "sha256:a994878b83653c8d81ca6f8809c6865bc0a963eb88a9ea768bc209ac7938f0c2",
+      "files": {
+        ".gitignore": "sha256:b52fa317b7e44ff1e7f35330daf12b7d1c41daab56b908c7f6bf2a9f048bd6d1",
+        "assets/clip-paths.css": "sha256:be00ecbe4322403ecb15236d1847ae8b837c8243046278ee77f3bfd82f09521d",
+        "assets/gsap-snippets.js": "sha256:d968dd99485fd9624f26431efa55b1c8074a248434f70283ee9fd210481c5074",
+        "assets/options-preview-template.html": "sha256:68b101298cfb2b9790ec6b0744215af61dc610f621f1a1bd3dfa0122ca24c836",
+        "assets/scripts/extract_variant.py": "sha256:5fbc5cef35daa77960989edb2299ba6caffd23081d5b97c5f8bb7b6e541fffe1",
+        "assets/scripts/get_city_tokens.py": "sha256:80655baaeef2cf55677026011b74d14c65fd6f2fb0e08565217c51d7da96edde",
+        "assets/scripts/receiver.py": "sha256:560dd810ba1589f5612a22f1dc1a78d88824d3f625d95a5561def83112c1cc93",
+        "assets/scripts/run_preview.ps1": "sha256:7131bb8f51e0e5e8dda825672d950b9c2c39835439f334930396715ba2f60acb",
+        "assets/scripts/run_preview.py": "sha256:b10d961da0f3694cd03a60ea0c5801704e4bd60e7e28e74b2fcd8b2c44586bcd",
+        "assets/sections/conversion-variants.html": "sha256:f1b083923564641f9645c1be8a149fe017c6b5b67f7e191d54265e9cd75aa7f6",
+        "assets/sections/features-variants.html": "sha256:5bfd808b1efd9976172ca54d2f89a067365af70caf4b70ee7647f94c9fbabdad",
+        "assets/sections/hero-variants.html": "sha256:c5b100f5ae05c0a549960bee0719671cab9ab9dd84086c3b9a29db6d02ee80b8",
+        "assets/sections/testimonial-variants.html": "sha256:adc99c26424b88370a858891324769ce98ef62a07674bf08a0e81975dcb14445",
+        "assets/style-preview-template.html": "sha256:f736e46d50597f06dcc48c1baacaa7d75f9c7e7264367c8612dc5be72c2edd3f",
+        "assets/textures.css": "sha256:3dee17dcc6bdac466ed9f4189d55bec9f56c32dd970360dfa030ebdde07cdfc5",
+        "evals/evals.json": "sha256:3fdff7c019cce7c894be5b0b61b41a1e385b5e6047fb7e1ad1551a31810d0ccf",
+        "README.md": "sha256:cbe76885b6067e321302b5453554a6be8e37cbecec836378886056aad4acb100",
+        "references/city-styles.md": "sha256:fbedc9a1ecd51ef090866f7f1a3af9dc00997eb9d94df1eb8c2407b4e093fefd",
+        "references/imagery-derivation.md": "sha256:24ded2d1c65494805913c73a2b2631ec3ae6acddf1c473e704096510d577bf4d",
+        "references/nav-catalog.md": "sha256:5ebb47d8edb57cf39a2d0ab17b048ab12102153c80c742ebde496ac086d50b84",
+        "references/preview-workflow.md": "sha256:d136567e7a104ddbbe0fd6e68ff6fdf75ffcbf034f5cea74ca29c47b990ea869",
+        "references/product-demo-hero.md": "sha256:2eed27115a448055486cad6b698e74d2da0a395475c17a7590aabaf8eae2c91e",
+        "SKILL.md": "sha256:1c4449d4051eb7d0b559625a1eb997e7e72748d9b20cc5b75d55d97d3414f26a",
+        "tests/test_preview_security.py": "sha256:08fc3b7cbf68a47084fdc309501c1fb71dc0680d0e9b18573d80937ec5896d8b"
+      }
+    },
+    {
+      "name": "documents",
+      "mode": "inline",
+      "source": {
+        "kind": "plugin",
+        "provider": "documents",
+        "label": "插件 documents"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ④：Word / .docx 文档，带渲染校对；随 App 提供"
+    },
+    {
+      "name": "image-gen",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "shared",
+        "rel": "image-gen"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ③：本机生图/改图通道（默认走 MCP 的 magpie-image）",
+      "digest": "sha256:107891b34bfeaa0ce59cd4e36ac23b8e999b4c76c1254ef7e252f36d0663713e",
+      "files": {
+        "scripts/image_gen.py": "sha256:a94ad092c2121a05de7f483352e283ecb3995bb74cd97776488614db758faa33",
+        "SKILL.md": "sha256:7a3a55af13fdeac2373a3f86c56271dbb637b883e1396750a947f88ceb5a95a2"
+      },
+      "credentials": "默认无：走 MCP 的 magpie-image，不用另配 Key；也可以自己配置生图服务（自选）"
+    },
+    {
+      "name": "kdocs",
+      "mode": "inline",
+      "source": {
+        "kind": "github",
+        "repo": "kdocs-app/kdocs-skill",
+        "subpath": "",
+        "commit": "6373605f40c77956e4235e1dde7dd2d882898d1d",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "kdocs"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ④：在线协作文档，一句话说清怎么做，不引技能"
+    },
+    {
+      "name": "oil-frontend",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-frontend",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-frontend"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ①：把设计落成能点的界面，管交互、状态与动效",
+      "digest": "sha256:4b748f371552e661dee49326796d66bee9cf47def384f44808db0087abd8e9ee",
+      "files": {
+        ".gitignore": "sha256:32b2dd7912ea54e02bcb2d85d94ee2a1fe0e74675f20bbbabeb7823055acb249",
+        "agents/openai.yaml": "sha256:445f72090d9209a6d471dff60c6ff57aec5a7014d3332b6dbfb5849259f22de8",
+        "assets/readme/source/hero-prompt.txt": "sha256:5be87563b50b4e45f0417b123e80e76933ee4feeedc9d1f0e1a617f5f2f5acc6",
+        "assets/readme/source/hero-subject.png": "sha256:60d6dfe716fa92a8f5f4be277127e761500a9f0c70b1cff70725b78d00a79076",
+        "evals/evals.json": "sha256:315923b5a4d28a48fb6ac08096b883d6113ac78837b1fe9d80e7d4c68e39723e",
+        "evals/triggers.json": "sha256:717eb923fff4dccd679152b2bb51f45814cbc4578e9383e8fd3265ee69855f72",
+        "LICENSE": "sha256:d44a3ca218007a85d3be41a0b76553d746e42336c7a63c6c6687d2619199c3c4",
+        "README.md": "sha256:dabb0dc908db411f969d08a225bbde87e462072e425223a47043823e2b1311fa",
+        "references/automation-contract.md": "sha256:8c738af132f0a9078763f18a1e7d72a9ce84198ee89d5235abc2403143aefa15",
+        "references/collection-and-detail-contract.md": "sha256:0052a779b39730d1c2363c94ef6f7e89ccb598d828e59285c222dee923471532",
+        "references/component-contract.md": "sha256:97e7a07569a0a7a5e060a01ec4f7a3f48b2ab8501c11f78834c28c4b14d3d39e",
+        "references/information-and-action-contract.md": "sha256:4fa804987694d2486f60b132045fbe54237bfc6f99395b8cae32bbecd79f92f5",
+        "references/interaction-and-editing-contract.md": "sha256:b22da626a893fd28bae9494ecc86b98618cfc037b0b90b0717c8238a080373e3",
+        "references/motion-performance-contract.md": "sha256:ff57beafd1ba1efe3420a28f28d5ad4cff515312dfa02e86e109219af7cb7256",
+        "references/overlay-contract.md": "sha256:5485bb28d2fdab0553b7294414b1467c4c329941858e915184476f2786428067",
+        "references/resource-recognition-contract.md": "sha256:05ec4f6a4905da27970ed8d73bdc700b091d09d6129accebfc865e67b8d92ab8",
+        "references/scope-and-state-integrity-contract.md": "sha256:79d9b3c3f71fea58594e4fe37528ceedf7bb29a89de5321a27c050f74c1967ae",
+        "references/state-and-loading-contract.md": "sha256:85650d017185cb30c6dc803fa4478dfab0e10a40f596cdc4d653a5a91f9930c1",
+        "references/style-implementation-contract.md": "sha256:2eb85946434d165dd1470848576ff3d431806d682e76ed274c252a7e12666b8d",
+        "references/viewport-and-dialog-contract.md": "sha256:05bcc6f8725b74429f9e8a3b520433cf86ff41c4742cbbb368df425517a155f7",
+        "scripts/recommend_once.py": "sha256:c0f2b51064f2395288c307c694ec633e92138d90d1ed20e1ed75ec7bf88f6089",
+        "SKILL.md": "sha256:802f70dd9d4171c0f3f3b3020b28b7d87786c8237fbe0ac58f6da02fbacc6a99"
+      }
+    },
+    {
+      "name": "oil-html",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-html",
+        "subpath": "",
+        "commit": "fc48517cc3f0e21055f7f116538b4aa09de626fa",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-html"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ②：HTML 分享文档（用户点名时才用）",
+      "digest": "sha256:7b9b05915abc7bb8bdd65cd17a5cb0e6cf1f0bc08faf4d378fdf8de606f9993b",
+      "files": {
+        ".gitignore": "sha256:cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e",
+        "agents/openai.yaml": "sha256:68cf3d9276fa72698d06615b3843a91424b95353a0f425eb896f501717326bdc",
+        "assets/readme/hero.svg": "sha256:a1e7ef2dd5a1659a506ae9dc45017c64bf5107dff5c1662858e94bd0c98f7e19",
+        "LICENSE": "sha256:d44a3ca218007a85d3be41a0b76553d746e42336c7a63c6c6687d2619199c3c4",
+        "oil-html.css": "sha256:58bff6baf903092d13172ea324dc1f071f6236f64a95bf7e4eb4686356f8227b",
+        "README.md": "sha256:c8a207f4a9fcfd2bf0c4a166583ea8ab8256a7c676e74ed06ce2604bc1ccc89c",
+        "SKILL.md": "sha256:dd159bf57caf3167337853c9f3b8326d3beeeaff2c325109919613c0fe7b0d3a"
+      }
+    },
+    {
+      "name": "oil-icon",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-icon",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-icon"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ③：成套图标（宫格生成 → 切图 → 去背）",
+      "digest": "sha256:ceaa7e8126a4252ab51fc8a649e6e0983f6ba60e9121f17f3d28d6d8deec0ab5",
+      "file_count": 91,
+      "credentials": "默认无：生图走 MCP 的 magpie-image；也可以自己配置（自选），技能自带的 Key 配置页只在通道缺失时才用"
+    },
+    {
+      "name": "oil-motion",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-motion",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-motion"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ①动效：需要 AI 生成连续画面的交互动画；轻量过渡交给 oil-frontend",
+      "digest": "sha256:3094ace489b2ac33431995d5cd240535a8572a3b814cd4178afa1aec3403378e",
+      "file_count": 86,
+      "credentials": "ZenMux API Key（图片与视频共用）；首次生成前由本机配置页写入系统凭据库，不写在文件里"
+    },
+    {
+      "name": "oil-ppt",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-ppt",
+        "subpath": "oil-ppt",
+        "commit": "ef12eaf69a8b0a17d910a4b1d1226d3c3682a517",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-ppt"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ②：16:9 幻灯片，含逐页大纲与正式预览",
+      "digest": "sha256:dd2367f3de6970830c67ba066e01f9d07f9b9d8432d988a0ed3c2666e1678bd4",
+      "file_count": 71
+    },
+    {
+      "name": "oil-tone",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-tone",
+        "subpath": "skills/oil-tone",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-tone"
+      },
+      "recorded": "2026-11-13",
+      "uses": "通用：一切面向读者的文案口径",
+      "digest": "sha256:5b49ffbc81b70d08acccf7c9e428d2ea003f667181f954af2091f69bec84e96d",
+      "files": {
+        "agents/openai.yaml": "sha256:bfa517852281b0de7d999938a99137fbd07d4517f558395919cdb8dc5d9e372b",
+        "scripts/tone_lint.py": "sha256:6dd67656a1475e5c5ebe3caf8ce4f135d22309a222ec19a91bb438f0ff483bda",
+        "SKILL.md": "sha256:4c41226e5abe9e50035ca2e4edb0615f41d1d9bcac1de2d166bb3265837ca059"
+      }
+    },
+    {
+      "name": "oil-ui-pro",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "codex",
+        "rel": "oil-ui-pro"
+      },
+      "recorded": "2026-11-13",
+      "uses": "底座 2 定方向；车道 ① 新建或整理界面、出设计稿、打磨视觉与交互",
+      "digest": "sha256:6fb471840baf71b98b0b1fc7b52a4bf376627f31c186dd16ed8b1bf5dcb03866",
+      "file_count": 154
+    },
+    {
+      "name": "oil-visual",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/oil-visual",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "oil-visual"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ②③：解释图与透明插画",
+      "digest": "sha256:05e766dda21aab4ebe936768316338b41e3c989f4e02a8f24c4643b4439af77f",
+      "files": {
+        ".gitignore": "sha256:53f0c100a33a56ebada040287b3d0f5dbab21c6ec6b66209fec5515c508f1144",
+        "agents/openai.yaml": "sha256:a2eb83b5f14e0cec1d1f4c6c422c61c2023f48cd6cfd4560940d64d572ecde18",
+        "assets/readme/hero-character.png": "sha256:b5a4cda78a10f988ecba3bcb7aabac60ed72d49a8d17589486c13cc14b37406c",
+        "assets/readme/hero.svg": "sha256:4fde34e3e7521842224c87d300d8b0676b9587c7821937f765e2c4053b257513",
+        "examples/agent-workflow-square.png": "sha256:fd67822c690bb15477f667279ff0b041233f628b44a428239e6dcf401eb4f203",
+        "examples/explainer-agent-workflow.png": "sha256:be9cc46eb4b45087bf6ba365965c08fcfd013751219a53e916a5b9912d1a16b4",
+        "examples/explainer-cost-comparison.png": "sha256:6bec7b5c8688fe1ef19d3bbda5fabadda63c52f45432448f7889041c79677057",
+        "examples/explore-folder-spotlight.png": "sha256:495168c143201192ce133234746691b88069d0ed021b7f773fc9d5fea19fbdbf",
+        "examples/feedback-loop.png": "sha256:6ffc161c9da2ac7d098d546b53846f4f5bb9d2de0faf7de87d07eb75bc164490",
+        "examples/from-complex-to-clear.png": "sha256:3756454167346eaa3b9a7cb92b8b2837fd84efadf558eebea4cb7eb459653dc0",
+        "examples/pipeline-bottleneck.png": "sha256:25610cc62a3fd413bdf65534539423d8988331da2fabf42f3148c6777e920c5a",
+        "examples/simplify-trim.png": "sha256:3bc10d29fb3948edc1423b74796420ccba6641d10ba4c4b93f0f71290ac92259",
+        "examples/transparent-illustration.png": "sha256:b5a4cda78a10f988ecba3bcb7aabac60ed72d49a8d17589486c13cc14b37406c",
+        "LICENSE": "sha256:502de0a0920985e472ef0a28cce28725efe91b1c11a983100186058c81e6469f",
+        "README.md": "sha256:e3e25d0064864ac207509aab31d19af99bf03f0ec1ffabb5c52b9a668041e16c",
+        "scripts/cutout.py": "sha256:a40eee984e6a3af5cf09ce41c93fbf3c8c7d7a7eccb695cc4a531e642055aac3",
+        "SKILL.md": "sha256:a536e271aff6a2f540bc6ffe97d8815e7fab206caae6ffbc9d3c95dd07a7d709"
+      }
+    },
+    {
+      "name": "pdf",
+      "mode": "inline",
+      "source": {
+        "kind": "plugin",
+        "provider": "pdf",
+        "label": "插件 pdf"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ④：PDF 读写与渲染校验；随 App 提供"
+    },
+    {
+      "name": "presentations",
+      "mode": "inline",
+      "source": {
+        "kind": "plugin",
+        "provider": "presentations",
+        "label": "插件 presentations"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ④：PowerPoint / PPTX 幻灯片文件；随 App 提供"
+    },
+    {
+      "name": "spreadsheets",
+      "mode": "inline",
+      "source": {
+        "kind": "plugin",
+        "provider": "spreadsheets",
+        "label": "插件 spreadsheets"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ④：表格文件；随 App 提供"
+    },
+    {
+      "name": "web-design-guidelines",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/agent-skills",
+        "subpath": "skills/web-design-guidelines",
+        "commit": "ba46938889d4e58635362fb8f618e1178ac3ec46",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "web-design-guidelines"
+      },
+      "recorded": "2026-11-13",
+      "uses": "车道 ① 验收：可读性、可访问性与网页通用规范",
+      "digest": "sha256:08e68b45423a19d2d357f8da7a3a05f28f6c45858450535fb35a94ce9ba2407a",
+      "files": {
+        "SKILL.md": "sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+      }
+    }
+  ],
+  "env_digest": "8d6cd574a61a8423cb52548c53732be4a1ac80bb459188576f52f71c4f6fcaf6"
+}
