@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Check structured Markdown notes before delivery."""
+"""Check structured Markdown notes before delivery.
+
+退出码：0（通过）/ 1（命中：有阻断项）。
+最后验证：2026-11-14，self-test 与真实笔记各跑一次。
+"""
 
 from __future__ import annotations
 
@@ -240,6 +244,7 @@ def self_test() -> int:
         print("FAIL  good sample")
         for item in findings:
             print(f"      {item['code']}: {item['message']}")
+        print("结论：命中（退出码 1：self-test 失败——好样被误报）")
         return 1
     bad_findings = check_text(bad)
     codes = {item["code"] for item in bad_findings if item["level"] == "error"}
@@ -249,8 +254,10 @@ def self_test() -> int:
         print(f"FAIL  bad sample missing: {sorted(missing)}")
         for item in bad_findings:
             print(f"      {item['code']}: {item['message']}")
+        print("结论：命中（退出码 1：self-test 失败——坏样没被抓全）")
         return 1
     print("PASS  note check self-test")
+    print("结论：通过（退出码 0：self-test 全部通过）")
     return 0
 
 
@@ -293,6 +300,10 @@ def cmd_check(args) -> int:
         errors = sum(1 for item in findings if item["level"] == "error")
         warnings = sum(1 for item in findings if item["level"] == "warn")
         print(f"\n{errors} error(s), {warnings} warning(s)")
+        if errors:
+            print(f"结论：命中（退出码 1：{errors} 个阻断先改再交）")
+        else:
+            print(f"结论：通过（退出码 0：0 个阻断，{warnings} 个提示）")
     return 1 if any(item["level"] == "error" for item in findings) else 0
 
 

@@ -4,7 +4,10 @@
 用法：
     py -3 design_check.py check <路径> [<路径> ...] [--json]
 
-只看文件，不联网、不改文件。退出码 1 表示有阻断项，0 表示没有。
+只看文件，不联网、不改文件。
+
+退出码：0（通过）/ 1（命中：有阻断项）。
+最后验证：2026-11-14，干净样例与含阻断样例各跑一次。
 """
 
 from __future__ import annotations
@@ -266,6 +269,7 @@ def cmd_check(args) -> int:
         return 1 if errors else 0
     if not findings:
         print("没有发现问题。")
+        print("结论：通过（退出码 0：没有发现问题）")
         return 0
     for item in findings:
         where = f"{item['file']}:{item['line']}" if item["line"] else item["file"]
@@ -273,7 +277,9 @@ def cmd_check(args) -> int:
         print(f"[{mark}] {where}\n    {item['message']}（{item['code']}）")
     print(f"\n阻断 {len(errors)} 项，提示 {len(infos)} 项。")
     if errors:
-        print("有阻断项就先改再交付。")
+        print(f"结论：命中（退出码 1：阻断 {len(errors)} 项，先改再交付）")
+    else:
+        print(f"结论：通过（退出码 0：没有阻断，提示 {len(infos)} 项）")
     return 1 if errors else 0
 
 
