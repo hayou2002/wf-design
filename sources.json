@@ -1,9 +1,10 @@
 {
   "workflow": "wf-design",
   "title": "设计工作流",
+  "route": "网页、界面、落地页、演示、配图、图标、正式文件",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-13",
+  "updated": "2026-11-17",
   "sources": [
     {
       "name": "beautify-github-readme",
@@ -362,5 +363,5 @@
       }
     }
   ],
-  "env_digest": "8d6cd574a61a8423cb52548c53732be4a1ac80bb459188576f52f71c4f6fcaf6"
+  "env_digest": "fc2e4e06f86f25da1cfa5732ee9647808f4ea0b3789bfdb6e7e2513645f444c5"
 }
