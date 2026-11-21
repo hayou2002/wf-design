@@ -4,7 +4,7 @@
   "route": "网页、界面、落地页、演示、配图、图标、正式文件",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-17",
+  "updated": "2026-11-21",
   "sources": [
     {
       "name": "beautify-github-readme",
@@ -48,8 +48,8 @@
         "root": "library",
         "rel": "citycraft"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ①：有风格的完整落地页（导航到页脚），自带城市风格库",
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-4：城市主题整页的视觉样板与完整制作",
       "digest": "sha256:a994878b83653c8d81ca6f8809c6865bc0a963eb88a9ea768bc209ac7938f0c2",
       "files": {
         ".gitignore": "sha256:b52fa317b7e44ff1e7f35330daf12b7d1c41daab56b908c7f6bf2a9f048bd6d1",
@@ -123,19 +123,77 @@
       "uses": "车道 ④：在线协作文档，一句话说清怎么做，不引技能"
     },
     {
+      "name": "miao-visual",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "hayou2002/miao-visual",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "miao-visual"
+      },
+      "recorded": "2026-11-21",
+      "uses": "阶段 1-4：画面涉及小妙或啊呜时读取个人形象基准并负责视觉素材制作",
+      "digest": "sha256:e95d3efe052115af2335e1ba4e23aa23ee78d4fcbefdd4b5ad6fe55a8b571c02",
+      "files": {
+        ".gitignore": "sha256:7b1b7b5335dc5462e9d146c6548745a41c881cf7c0e768206d15e5ec4ebdcc2b",
+        "assets/readme/hero.svg": "sha256:90c8d0e2db5572f1fc92726c1c00138dcb09340242631d7caef7d1894c96b447",
+        "assets/reference/awoo-expressions.png": "sha256:3f57e9b196b59b5fbfec5ba2441e38b4c8237cead61eb27a208f65f388927509",
+        "assets/reference/awoo-turnaround.png": "sha256:cd6cb264e2987547c69a10f44edb338ea07a07a8df83271283337713f2738517",
+        "assets/reference/character-expressions.png": "size:2325923",
+        "assets/reference/character-gestures.png": "sha256:aa5dce6d67a2aaa7f51d7a9e04201752a2f599cb92361e0a74d345d13182b903",
+        "assets/reference/character-outfits.png": "size:2204172",
+        "assets/reference/character-turnaround.png": "size:2279025",
+        "assets/reference/composite-sample.png": "sha256:a17b94bab3e5245423b8242ea31b634dc17eadc84ad81666f8c038d210aa6cdd",
+        "assets/reference/cover-layout-ref.png": "sha256:041daf80640483862ef30aa37596c86b4378094329a515977c1c9d71acaea0e9",
+        "assets/reference/dark-sample.png": "sha256:eb5d25307f74b1544bfff0999f3d97006b8f5be8965f42e2ae3947a9205b8909",
+        "assets/reference/duo-scene.png": "sha256:7a2b9cdaa6c965c2e44c52aec60ca455272e4aff6b918cc4b275f80bb51f10d5",
+        "assets/reference/master.png": "sha256:439efff91665830e39e2e4ee7a4ddfb602d20b81e0dd6a652e48469591659688",
+        "assets/reference/miao-cutout.png": "sha256:19e809aa83a58c5adc8b2141b8bfb7e72268b4d64cd517dc59ca87994ec7f8ae",
+        "assets/reference/sample-avatar.png": "sha256:4db5172f4f78ef58cd99dea32aca4d0a80018cd72e5e1396729996cf4948a5b0",
+        "assets/reference/sample-poster.png": "size:2118708",
+        "assets/svg/miao-cover-16x9.svg": "sha256:0187db4d9dcc197ad89cc45b11fcffb39dc23e2dcd029d6208d10ba26d0e4b9d",
+        "README.md": "sha256:eceed768662fb9e26b74cb590c4743a59d9079ae964a0e982b10541898e4e095",
+        "references/character.md": "sha256:d651281caddaf4ee70cb1190eb9d22fe29a9bc216de40c867620775551135890",
+        "references/integrations.md": "sha256:c8628412b081c5e89d19c4fc9ed5193ceba6de1f99ba0083e7f12581d872a053",
+        "references/prompts.md": "sha256:2c3821180fbd3fd9496b60757d0374b79bd0024a6e0bcb98a9f091b371c0cc56",
+        "references/svg.md": "sha256:294a65956541be69d0030ad38470aa8f8b27717d8d6d67fa80bb3a7cc38b1f80",
+        "references/usage.md": "sha256:e9e3e1d45761a162dc8e0e4ac20aa9dda9a37f41c9944882e997b1ec8a0fad65",
+        "scripts/check_svg.py": "sha256:8839d61fbb9d06c43054b5b6569941e393cd6540a0a7016b43b93a88569ebe57",
+        "scripts/render-svg.ps1": "sha256:6a593b0c07de8ea12722b69add93e1c2893e93e1f9556848c00a54b9d0358e37",
+        "SKILL.md": "sha256:fea59d6224ad3ca7010cab66fb9a466568f94d4b15c1535ac56b6c8366fc27fe"
+      }
+    },
+    {
+      "name": "oil-art-landing",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "codex",
+        "rel": "oil-art-landing"
+      },
+      "recorded": "2026-11-21",
+      "uses": "阶段 2-4：艺术官网参考与首屏视觉样板；确认后交 oil-ui-pro 还原",
+      "digest": "sha256:aaead8cfaf66bb9123ac8de8d3a54715652b240477558f43526bea189158424d",
+      "file_count": 62
+    },
+    {
       "name": "oil-frontend",
       "mode": "reference",
       "source": {
         "kind": "github",
         "repo": "oil-oil/oil-frontend",
         "subpath": "",
-        "commit": "",
+        "commit": "07a3c73001b061b7b90caba42767194205f917a8",
         "label": "magpie 库",
         "root": "library",
         "rel": "oil-frontend"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ①：把设计落成能点的界面，管交互、状态与动效",
+      "recorded": "2026-11-21",
+      "uses": "阶段 4：应用与模块的交互、状态、响应式和交互动画实现",
       "digest": "sha256:4b748f371552e661dee49326796d66bee9cf47def384f44808db0087abd8e9ee",
       "files": {
         ".gitignore": "sha256:32b2dd7912ea54e02bcb2d85d94ee2a1fe0e74675f20bbbabeb7823055acb249",
@@ -217,11 +275,10 @@
         "root": "library",
         "rel": "oil-motion"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ①动效：需要 AI 生成连续画面的交互动画；轻量过渡交给 oil-frontend",
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-4：视频的关键分镜、试片与连续镜头制作；界面交互动画交 oil-frontend",
       "digest": "sha256:3094ace489b2ac33431995d5cd240535a8572a3b814cd4178afa1aec3403378e",
-      "file_count": 86,
-      "credentials": "ZenMux API Key（图片与视频共用）；首次生成前由本机配置页写入系统凭据库，不写在文件里"
+      "file_count": 86
     },
     {
       "name": "oil-ppt",
@@ -235,8 +292,8 @@
         "root": "library",
         "rel": "oil-ppt"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ②：16:9 幻灯片，含逐页大纲与正式预览",
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-4：16:9 HTML 演示的关键页样板与完整制作",
       "digest": "sha256:dd2367f3de6970830c67ba066e01f9d07f9b9d8432d988a0ed3c2666e1678bd4",
       "file_count": 71
     },
@@ -247,13 +304,13 @@
         "kind": "github",
         "repo": "oil-oil/oil-tone",
         "subpath": "skills/oil-tone",
-        "commit": "",
+        "commit": "39cbf92f76c90b7bb27a5b5d4ed88a1fc5fa31f6",
         "label": "magpie 库",
         "root": "library",
         "rel": "oil-tone"
       },
-      "recorded": "2026-11-13",
-      "uses": "通用：一切面向读者的文案口径",
+      "recorded": "2026-11-21",
+      "uses": "阶段 1-5：面向读者的内容表达与交付前文案检查",
       "digest": "sha256:5b49ffbc81b70d08acccf7c9e428d2ea003f667181f954af2091f69bec84e96d",
       "files": {
         "agents/openai.yaml": "sha256:bfa517852281b0de7d999938a99137fbd07d4517f558395919cdb8dc5d9e372b",
@@ -270,10 +327,10 @@
         "root": "codex",
         "rel": "oil-ui-pro"
       },
-      "recorded": "2026-11-13",
-      "uses": "底座 2 定方向；车道 ① 新建或整理界面、出设计稿、打磨视觉与交互",
-      "digest": "sha256:6fb471840baf71b98b0b1fc7b52a4bf376627f31c186dd16ed8b1bf5dcb03866",
-      "file_count": 154
+      "recorded": "2026-11-21",
+      "uses": "阶段 2-4：组织可视参考对比；网页、App、桌面应用与模块设计及视觉还原",
+      "digest": "sha256:b9897b0cfcb658b1e5480b1566145bda0916b024e1571a9d40ae46737298169d",
+      "file_count": 157
     },
     {
       "name": "oil-visual",
@@ -361,7 +418,24 @@
       "files": {
         "SKILL.md": "sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
       }
+    },
+    {
+      "name": "wf-agent-team",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "hayou2002/wf-agent-team",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "wf-agent-team"
+      },
+      "recorded": "2026-11-21",
+      "uses": "阶段 2-4：视觉方向、第一版与复查的专项小队",
+      "digest": "sha256:f2124497b5c08e904cb4b24f104de5662b68194229d74c124f888ccfdeafae39",
+      "file_count": 1026
     }
   ],
-  "env_digest": "fc2e4e06f86f25da1cfa5732ee9647808f4ea0b3789bfdb6e7e2513645f444c5"
+  "env_digest": "4c669dbbab6e54832c38a8bbe8406795db17b2766b6f625ccf820a2386cc120b"
 }

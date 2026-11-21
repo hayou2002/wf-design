@@ -1,38 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-labelledby="hero-title hero-desc">
-  <title id="hero-title">wf-design 工作流示意</title>
-  <desc id="hero-desc">先按类型调用内置 SOP,再从网页、文档、图片、正式文件四条车道里选一条,交付前自检。</desc>
-  <rect width="1200" height="340" rx="24" fill="#FDF8FA"/>
-  <rect x="1" y="1" width="1198" height="338" rx="23" fill="none" stroke="#F2DDE4"/>
-  <rect x="72" y="56" width="196" height="30" rx="15" fill="#FBE3EA"/>
-  <text x="88" y="77" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" letter-spacing="2" fill="#BE3A62">WORKFLOW SKILL</text>
-  <text x="70" y="150" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="58" font-weight="700" fill="#20131A">wf-design</text>
-  <text x="72" y="196" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#7A5B68">从「想要好看」到能交付</text>
-  <text x="72" y="242" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#957683">问清给谁看 · 选对工具 · 做完能自己判断</text>
-  <text x="72" y="272" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#957683">一次只走一条车道,用不上的技能不硬凑</text>
-
-  <g font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif">
-    <text x="632" y="84" font-size="18" fill="#957683">先按类型调 SOP,再从四条车道选一条</text>
-
-    <rect x="632" y="104" width="240" height="70" rx="16" fill="#FFFFFF" stroke="#F0D8E0"/>
-    <circle cx="660" cy="139" r="8" fill="#D6486F"/>
-    <text x="684" y="146" font-size="20" fill="#3A2A31">网页与界面</text>
-
-    <rect x="888" y="104" width="244" height="70" rx="16" fill="#FFFFFF" stroke="#F0D8E0"/>
-    <circle cx="916" cy="139" r="8" fill="#7C5CFF"/>
-    <text x="940" y="146" font-size="20" fill="#3A2A31">文档与演示</text>
-
-    <rect x="632" y="188" width="240" height="70" rx="16" fill="#FFFFFF" stroke="#F0D8E0"/>
-    <circle cx="660" cy="223" r="8" fill="#E9A13B"/>
-    <text x="684" y="230" font-size="20" fill="#3A2A31">图片与图标</text>
-
-    <rect x="888" y="188" width="244" height="70" rx="16" fill="#FFFFFF" stroke="#F0D8E0"/>
-    <circle cx="916" cy="223" r="8" fill="#2F8F7A"/>
-    <text x="940" y="230" font-size="20" fill="#3A2A31">正式文件</text>
-
-    <rect x="632" y="278" width="60" height="12" rx="6" fill="#D6486F"/>
-    <rect x="700" y="278" width="60" height="12" rx="6" fill="#7C5CFF"/>
-    <rect x="768" y="278" width="60" height="12" rx="6" fill="#E9A13B"/>
-    <rect x="836" y="278" width="60" height="12" rx="6" fill="#2F8F7A"/>
-    <text x="912" y="289" font-size="18" fill="#957683">一条车道配一套色</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-labelledby="title desc">
+  <title id="title">wf-design：先选参考，再确认样板</title>
+  <desc id="desc">给没有设计基础的人一条能参与、能确认、能验收的设计工作流：选择参考，确认关键样板，再完成成品。</desc>
+  <rect width="1200" height="340" rx="24" fill="#F7F5F0"/>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <text x="64" y="88" font-size="62" font-weight="700" fill="#20231F">wf-design</text>
+    <text x="66" y="128" font-size="23" fill="#62675E">先选参考，再确认样板，最后完整制作</text>
+    <path d="M66 160H442" stroke="#C8C9C1"/>
+    <text x="66" y="200" font-size="20" fill="#62675E">给没有设计基础的人，一条能参与、</text>
+    <text x="66" y="232" font-size="20" fill="#62675E">能确认、能验收的设计工作流。</text>
+    <rect x="66" y="270" width="146" height="30" rx="15" fill="#E2E8D9"/>
+    <text x="84" y="291" font-size="18" fill="#43513B">参考驱动</text>
+  </g>
+  <g transform="translate(520 44)" font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <text x="0" y="20" font-size="19" fill="#62675E">01 选择参考</text>
+    <g transform="translate(0 38)">
+      <rect width="82" height="82" rx="8" fill="#E3E0D8"/>
+      <rect x="94" width="82" height="82" rx="8" fill="#D7DDD0" stroke="#43513B" stroke-width="3"/>
+      <rect x="188" width="82" height="82" rx="8" fill="#E7E1D5"/>
+      <path d="M12 60L32 40L50 54L70 28" fill="none" stroke="#9B9D94" stroke-width="3"/>
+      <circle cx="135" cy="41" r="22" fill="#89967C"/>
+      <path d="M106 68H164" stroke="#43513B" stroke-width="4"/>
+      <path d="M200 60L222 42L240 52L258 28" fill="none" stroke="#B4A58F" stroke-width="3"/>
+      <circle cx="170" cy="102" r="13" fill="#43513B"/>
+      <path d="M164 102L169 107L177 96" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    </g>
+    <path d="M282 79H306" stroke="#8A8D84" stroke-width="2"/>
+    <path d="M299 72L307 79L299 86" fill="none" stroke="#8A8D84" stroke-width="2"/>
+    <text x="322" y="20" font-size="19" fill="#62675E">02 确认样板</text>
+    <rect x="322" y="38" width="142" height="82" rx="8" fill="#FFFFFF" stroke="#C8C9C1"/>
+    <rect x="336" y="52" width="56" height="8" rx="4" fill="#43513B"/>
+    <rect x="336" y="70" width="108" height="5" rx="2" fill="#D7D8D1"/>
+    <rect x="336" y="82" width="82" height="5" rx="2" fill="#D7D8D1"/>
+    <rect x="336" y="96" width="44" height="14" rx="7" fill="#89967C"/>
+    <path d="M476 79H500" stroke="#8A8D84" stroke-width="2"/>
+    <path d="M493 72L501 79L493 86" fill="none" stroke="#8A8D84" stroke-width="2"/>
+    <text x="516" y="20" font-size="19" fill="#62675E">03 完整成品</text>
+    <g transform="translate(516 38)">
+      <rect width="100" height="82" rx="8" fill="#43513B"/>
+      <rect x="10" y="12" width="80" height="12" rx="3" fill="#D7DDD0"/>
+      <rect x="10" y="34" width="36" height="36" rx="4" fill="#89967C"/>
+      <path d="M56 40H88M56 51H82M56 62H88" stroke="#AEB9A5" stroke-width="4"/>
+    </g>
+    <path d="M0 154H616" stroke="#C8C9C1"/>
+    <text x="0" y="190" font-size="20" fill="#20231F">参考不是成品 · 样板不是全站</text>
+    <text x="0" y="224" font-size="18" fill="#62675E">两次确认，把大修改留在成本最低的时候</text>
   </g>
 </svg>
