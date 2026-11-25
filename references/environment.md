@@ -13,7 +13,6 @@
 | bilibili-skill | — | 只写步骤 | GitHub justinzm/bilibili_skill | npx skills add justinzm/bilibili_skill |
 | citycraft | — | 引用 | GitHub oil-oil/citycraft | npx skills add oil-oil/citycraft |
 | design-reference-library | 0.2.0 | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
-| documents | — | 只写步骤 | 插件 documents | 安装插件 documents |
 | frontend-design | — | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 | frontend-ui-engineering | — | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 | image-gen | — | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
@@ -28,14 +27,11 @@
 | oil-tone | — | 引用 | GitHub oil-oil/oil-tone › skills/oil-tone | npx skills add oil-oil/oil-tone --skill oil-tone |
 | oil-ui-pro | 0.34.5 | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
 | oil-visual | — | 引用 | GitHub oil-oil/oil-visual | npx skills add oil-oil/oil-visual |
-| pdf | — | 只写步骤 | 插件 pdf | 安装插件 pdf |
-| presentations | — | 只写步骤 | 插件 presentations | 安装插件 presentations |
 | project-map | 0.2.0 | 引用 | GitHub hayou2002/project-map | npx skills add hayou2002/project-map |
 | review-animations | — | 引用 | 本机目录 | 随本机技能目录同步（无上游仓库） |
-| spreadsheets | — | 只写步骤 | 插件 spreadsheets | 安装插件 spreadsheets |
 | vibehub | — | 引用 | GitHub oil-oil/vibe-hub-skill › skills/vibehub | npx skills add oil-oil/vibe-hub-skill --skill vibehub |
 | web-design-guidelines | 1.0.0 | 引用 | GitHub oil-oil/agent-skills › skills/web-design-guidelines | npx skills add oil-oil/agent-skills --skill web-design-guidelines |
-| wf-agent-team | 0.5.0 | 引用 | GitHub hayou2002/wf-agent-team | npx skills add hayou2002/wf-agent-team |
+| wf-agent-team | 0.8.0 | 引用 | GitHub hayou2002/wf-agent-team | npx skills add hayou2002/wf-agent-team |
 
 ## 自定义配置
 

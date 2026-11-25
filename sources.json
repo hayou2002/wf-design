@@ -1,7 +1,7 @@
 {
   "workflow": "wf-design",
   "title": "设计工作流",
-  "route": "网页、界面、落地页、演示、配图、图标、正式文件",
+  "route": "网页、界面、落地页、视觉演示、配图、图标、交互动画、视频",
   "status": "active",
   "created": "2026-11-13",
   "updated": "2026-11-25",
@@ -150,17 +150,6 @@
         "scripts/test_react_bits.py": "sha256:367fbaecc4c0a2d8cb880f623c0ceafbc97af94c8ce821a12b87437d2ff34c31",
         "SKILL.md": "sha256:2941ba44cc46122c9008aa9d42344da03c6f67122bb1c0611e47383bdcddf913"
       }
-    },
-    {
-      "name": "documents",
-      "mode": "inline",
-      "source": {
-        "kind": "plugin",
-        "provider": "documents",
-        "label": "插件 documents"
-      },
-      "recorded": "2026-11-21",
-      "uses": "阶段 3-5：Word 文档的样板、完整排版与渲染验收；由插件提供"
     },
     {
       "name": "frontend-design",
@@ -457,28 +446,6 @@
       }
     },
     {
-      "name": "pdf",
-      "mode": "inline",
-      "source": {
-        "kind": "plugin",
-        "provider": "pdf",
-        "label": "插件 pdf"
-      },
-      "recorded": "2026-11-13",
-      "uses": "车道 ④：PDF 读写与渲染校验；随 App 提供"
-    },
-    {
-      "name": "presentations",
-      "mode": "inline",
-      "source": {
-        "kind": "plugin",
-        "provider": "presentations",
-        "label": "插件 presentations"
-      },
-      "recorded": "2026-11-13",
-      "uses": "车道 ④：PowerPoint / PPTX 幻灯片文件；随 App 提供"
-    },
-    {
       "name": "project-map",
       "mode": "reference",
       "source": {
@@ -538,17 +505,6 @@
       }
     },
     {
-      "name": "spreadsheets",
-      "mode": "inline",
-      "source": {
-        "kind": "plugin",
-        "provider": "spreadsheets",
-        "label": "插件 spreadsheets"
-      },
-      "recorded": "2026-11-13",
-      "uses": "车道 ④：表格文件；随 App 提供"
-    },
-    {
       "name": "vibehub",
       "mode": "reference",
       "source": {
@@ -602,10 +558,10 @@
         "rel": "wf-agent-team"
       },
       "recorded": "2026-11-25",
-      "uses": "阶段 5-7：经用户逐批授权后组织设计、执行与审查；主控始终负责验收",
-      "digest": "sha256:31208b14462b0accd7a11032df566149da1c43a63f59ea5478ffa96e0f5d3a0a",
+      "uses": "可选小队：中文阶段沟通、探索与设计分工、单切片执行、审查与长任务交接；每批获准后派遣",
+      "digest": "sha256:18b4772eddc8eb16f1f7f1a83bb2a25d876e7218e96d404ea682c3ac43ce2f2b",
       "files": {
-        ".gitignore": "sha256:b7907b09bc6cea34dfd3a8e644e1be37bf94b54c367d39e016eea3dfbf38409b",
+        ".gitignore": "sha256:e0ac0c1739ae11953937bc94422ad5a44177151b84e430eaa09d41928fd8fd9b",
         "agents/Designer.toml": "sha256:e74d93a6c03d6591ce0d641e5c45d1d2e4045615f33a94c8e93043bbec31a115",
         "agents/Executor.toml": "sha256:98155129c1c318681fa2d66f7eaf70ddc4ed24e0eae6ccbbd1e0f8e0f51c8c06",
         "agents/ExpertAdvisor.toml": "sha256:7ae1b14ae57e84fc52899f8c67ae399421bec0c82e301505e7b962bad41fc6df",
@@ -613,25 +569,36 @@
         "agents/Reviewer.toml": "sha256:56936ec99f36873925f12247c9b159076b620e0707493c6b5ad8f1b543306e31",
         "assets/readme/hero.svg": "sha256:46ea9cf90a935465fb298ca221defb9b35f88e6bd607503150128c6f73533f08",
         "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
-        "README.md": "sha256:d1a41240e0ef29f811b238ec5526a9b602fa67ccb0c79b216c2ca2af20b4cc05",
-        "references/backends.md": "sha256:4bfb9979c3937774980edd64c0559004cc86e45333e536a90d96de63521c8937",
+        "README.md": "sha256:4e01e4c862cf063e49aeba6c1e09b9dddbfe6958e35e72c027bbdb725909768a",
+        "references/backends.md": "sha256:2fd1a6fc40c87a216d8ab53b3102530f45254c359e17892f26a4338d9baaebed",
+        "references/communication.md": "sha256:055266fc2573da5a5b06028131927d6a08c71c41fbc09b34dc95b825b9c7113b",
         "references/default-sentinel.toml.example": "sha256:efb17dab35669dfda8cdae704f790e655c93ac9bc7706a974022a87d5fab2067",
-        "references/environment.md": "sha256:6c771f7524e2928411e28c7075aed5f2101212cb55e8af4e041cccdf750301db",
-        "references/habits.md": "sha256:551aa995f2d5db128f00cb88e12c67b6e067a5c0f2c2e1c694ce52ba98e223c2",
-        "references/playbook.md": "sha256:93abea934ee4b3e9a28897de9d4b4713eabee33c0aa261ca91006d6a58b84df6",
-        "references/roles.md": "sha256:015df43c78d3f4c0d07a1e49ff863ab110436d6df7d95a9a7c4b2580d1801a77",
-        "references/setup.md": "sha256:2ff1b6bc878fb53b27f3085f5be1016ffd8f0abe58a9ec3c215aa532920ba21e",
+        "references/environment.md": "sha256:a3270c17997999ae15fa5dca7d4fe594ed7bab517f67ac2178f654453c8a43d5",
+        "references/habits/README.md": "sha256:2bd7e45e46fdeb70140cbd3cb4a4a2a17e631f20d1e375c29b53d4dd0b117810",
+        "references/habits/teams.local.json": "sha256:3bc5700baee8ce9c1b1abc7479c98c0eb0f15ab3471a291d8c2e3571ec0ae697",
+        "references/habits.md": "sha256:1bdc401cd93d39d9408252b46e92bd6345f29c19e49158c823a6f8c4eabc3f84",
+        "references/kimi-mcp.md": "sha256:bb06d24a08ffca3f086e0a0dccf243f23e5f06eebd23a5104c734069ba0a6aa2",
+        "references/model-evidence.md": "sha256:8979e58dc8fe7fa312fbbcf29e7dc4a2dadffca94357ecfac2bf94e29ae43a65",
+        "references/playbook.md": "sha256:709290266da8c3cdbcdc7b23d7592a70bc8fa28cdf9069baa0015d178da6dfeb",
+        "references/project-management.md": "sha256:1fa8229b5f2005bce86d3c23ddcef3fc3cce95364a5f7c1736db3e1e97db73e2",
+        "references/roles.md": "sha256:013e3b78f19810576b16af684f2dd6a7f807db3dd73273f9d3b718825050a208",
+        "references/setup.md": "sha256:6ac47ec42d384a614b989a83cbeaed08784bee813fadb6eb3f8186c978bd93d4",
         "references/sops/_template.md": "sha256:0b5f656d2bceabfb533a3c11b0f1e45e42eeec2f81c05e6be6fcc46ea5c211ce",
         "references/sops/handoff.md": "sha256:10d968bcd69ae37f320d47427dd35f147b744c8c1ab92cea8eb1c350656c4ec5",
         "references/sops/index.md": "sha256:41430c5e45aafc56aa39b2e4bfd110b6a79386d87da5e3bbce22249f07b52071",
-        "references/sops/vibecode.md": "sha256:b6b5c338353cb4a41c325b09c28490e3fb51aa8ea09acdcd61cc866de566c0fd",
+        "references/sops/vibecode.md": "sha256:602f6b93d34f51384cfe92cf3056b87d45adb4818a44a8eada031239d939ca97",
+        "references/teams.example.json": "sha256:eef9888e04be905462c7880ae63d5ac87df66e2a537e864c16bda362f7ebd05a",
         "scripts/check_handoff.py": "sha256:f6b83ee86607eb8405c3127f5531cba628629246c827382f0cb9318e577df656",
         "scripts/ensure_agent_effort.py": "sha256:d23fb3df7a45a6163262e45f82da2a1151ca74622caa67455874e6cc85f10a6b",
-        "scripts/preflight.py": "sha256:56e84d02b3398022b7f7d30698ff79544e0aa8401de63142a61f8110be9ad94c",
-        "SKILL.md": "sha256:e09961f7d02421a84ebd18eb15e822afa65f89caddb2d54e59daacb98d8dce6b",
-        "sources.json": "sha256:e997dd10706fc1019f5d799ac5c98faf10ef51321a8ca95392f4be62f2c96505"
+        "scripts/ensure_kimi_mcp.py": "sha256:9738f92a59e91cb26827f2e40f5beeca73295a965d07c57e219f43a019f5409f",
+        "scripts/preflight.py": "sha256:268a3223963918118ee7428cb507bd8dcf91055b8a94b221f5f67aa5e2063b31",
+        "scripts/team_tools.py": "sha256:1ca790668292fbebc27fdd6f6afbe8841bbedbcba3af85a961374c4c677592fb",
+        "SKILL.md": "sha256:f3decfa5fafd984112b596d757ece0ab5b9c1742fbfcce2cbc065fe3045def0e",
+        "sources.json": "sha256:03a78d71942ad4679e08966837a8a9ea51fafbb86df3aa231f5afad07dc8a783",
+        "tests/test_ensure_kimi_mcp.py": "sha256:36d26349dd83024d322d50fd4674f36a44dfd74a56559cfa2de7195f0e47e183",
+        "tests/test_team_tools.py": "sha256:7b4bd1dac541d2947337f78c96fc78b8abd7181343c53e921b5e672599fbd40b"
       }
     }
   ],
-  "env_digest": "e103743baf3edd903545253419f19ba7a5eb005217c7a225b93aaa8149dd5eb6"
+  "env_digest": "d87ee50e347ec26f914bccb7ae4ea8ae535bf58b1da64011cd5dffb20cbe3b60"
 }

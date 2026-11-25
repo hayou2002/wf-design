@@ -1,9 +1,9 @@
 ---
 name: wf-design
-description: "做设计时先走这条:按任务复杂度组织事实、设计契约、关键样板、真实闭环和切片验收。触发场景:办公文档、网页、移动或桌面 App、模块、图片、交互动画和视频。不用于只改文案、一个颜色或间距，也不替代完整开发、部署与发布流程。"
+description: "做设计时先走这条:按任务复杂度组织事实、设计契约、关键样板、真实闭环和切片验收。触发场景:网页、移动或桌面 App、模块、图片、交互动画、视频和视觉型演示。不用于普通办公文档、知识笔记、学习材料、只改文案、一个颜色或间距，也不替代完整开发、部署与发布流程。"
 license: MIT
 metadata:
-  version: "0.6.0"
+  version: "0.7.0"
 ---
 
 # 设计工作流
@@ -24,7 +24,7 @@ metadata:
 
 已有产品先沿用其设计体系。只有用户要比较、原方向不适合或明确要更有辨识度时，才增加候选；不是每个新页面都重新找风格。
 
-笔记整理先读 [SOP 索引](references/sops/index.md)，再按命中的 SOP 执行，不走视觉参考流程。新增场景 SOP 时从索引链接的模板开始，不在通用流程另建一套。
+知识笔记、学习材料和普通文档不在此分档，分别交 `wf-office`、`learning-material-design` 和 `wf-study`。设计专项 SOP 从 [SOP 索引](references/sops/index.md) 进入，不在通用流程另建一套。
 
 ## 通用流程
 
@@ -51,11 +51,13 @@ metadata:
 
 | 产物 | 主用技能 | 关键验证 | 边界 |
 | --- | --- | --- | --- |
-| Word、PDF、PPT、表格 | 宿主文档、PDF、演示与表格能力；kdocs；oil-ppt | 代表性页面、阅读层级与文件可打开 | 按用户要求交文件或 HTML |
+| 视觉型演示 | oil-ppt；oil-showcase；对应视觉技能 | 关键页面、叙事节奏与真实画面 | 只做视觉方向或展示物料；正式 PPTX/Word 交 `wf-office` |
 | 网页、移动 App、桌面应用 | oil-ui-pro；oil-art-landing；citycraft；oil-frontend | 关键任务、真实状态与目标视口 | 视觉主路径只选一个；工程实现交开发流程 |
 | 界面模块、图片 | oil-ui-pro；oil-visual；oil-icon；image-gen | 正常与关键状态，或关键画面 | 可独立交付或交回应用集成 |
 | 交互动画 | oil-frontend；animate；review-animations | 该不该动、目的、打断、退出和减少动态效果 | 连续镜头不归这里 |
 | 视频 | oil-motion；需要配图时按图片路径 | 关键分镜、静帧或短试片 | AI 视频与界面微交互分开 |
+
+办公文档交 `wf-office`；学习材料的内容设计交 `learning-material-design`；学习过程交 `wf-study`。本工作流不负责知识笔记、教学目标和文件排版。
 
 HTML 分享文档只在用户点名 oil-html 风格时使用；普通网页走应用路径。每个技能只在命中时读取，不全库通读。
 
@@ -67,4 +69,10 @@ HTML 分享文档只在用户点名 oil-html 风格时使用；普通网页走�
 - 已确认的长期规范进入项目 `DESIGN.md` 或项目约定位置；过程小样、截图和评审证据放 `.oil-ui/<任务>/` 或项目既有过程目录。
 - 一个任务切片使用一个分支和一个工作区；共享文件只有一个写入负责人。主控依据真实 diff、测试、截图与回读验收，不靠口头汇总。
 
-详细执行见 [playbook](references/playbook.md)，最小质量线见 [验收卡](references/acceptance.md)，个人经验见 [habits](references/habits.md)，依赖见 [environment](references/environment.md)。
+## 资源导航
+
+- 执行：[playbook](references/playbook.md)、[SOP 索引](references/sops/index.md)。
+- 验收：[acceptance](references/acceptance.md)。
+- 经验：[habits](references/habits.md)。
+- 参考：[参考资源索引](references/references-library.md)。
+- 依赖：[environment](references/environment.md)。

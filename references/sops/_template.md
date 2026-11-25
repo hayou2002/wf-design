@@ -48,7 +48,7 @@
 ## 7. 自检
 
 ```bash
-py -3 <技能目录>/scripts/note_check.py check <产物路径>
+py -3 <技能目录>/scripts/design_check.py check <产物路径>
 ```
 
 - 阻断项：
