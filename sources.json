@@ -4,8 +4,25 @@
   "route": "网页、界面、落地页、演示、配图、图标、正式文件",
   "status": "active",
   "created": "2026-11-13",
-  "updated": "2026-11-21",
+  "updated": "2026-11-25",
   "sources": [
+    {
+      "name": "animate",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "shared",
+        "rel": "animate"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 6：界面微交互先判断该不该动，再按项目规范实现；不用于视频",
+      "digest": "sha256:b12ce8026c395cda0f94e0e22cb3209c063d419afd81b64c707f5b1b8eb02b78",
+      "files": {
+        "RECIPES.md": "sha256:646f4fa9fc7e7a0be8aa89675bee79c3ded4f6367ac7529c00161f39e84c4702",
+        "SKILL.md": "sha256:fd5e5fffd62a152da49d9529b3e12434693e198da1e2fbc3255c2babe7e2f2e8"
+      }
+    },
     {
       "name": "beautify-github-readme",
       "mode": "reference",
@@ -18,9 +35,9 @@
         "root": "library",
         "rel": "beautify-github-readme"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ③：纯 SVG 素材（徽章、线条图、README 配图）",
-      "digest": "sha256:0d4dd8431c22485772d50c10b66082b03430f47c41a9c11429f4aa8677aa94d1",
+      "recorded": "2026-11-25",
+      "uses": "阶段 6：README 配图、徽章与项目原生 SVG 视觉素材；公开展示投稿必须另行明确授权",
+      "digest": "sha256:6d4818ed30aa1c4bb887f5a2b23e0081bdd37471c9bbeca8ed29cc16562ba8bd",
       "files": {
         "agents/openai.yaml": "sha256:f43bc40f7fea095d63ebf2abf9fa9d1dc16ffba2159d0919fd1c1bf16ee0955a",
         "references/content-architecture.md": "sha256:6c915f670819947df2e64d045218afe072d538c418c5b1450d5ab92d755cee0d",
@@ -28,13 +45,29 @@
         "references/hybrid-svg-production.md": "sha256:ab664473785efb609461a73b957f8f69e6ed32730ce11689b6123d9d038b28b1",
         "references/motion-production.md": "sha256:c9ada426364ee6fd089e434c01d5d34246413d4591421b41e2a5b786b94e895a",
         "references/project-native-hero.md": "sha256:8630160574d789d04d7f7ef6553a8936a810808a822401982f231a3cc327ef29",
-        "references/showcase-contribution.md": "sha256:b011cb4646719e832286b8e0ad03db38ac9e7a19b80d4c580cc0954b5dbcb567",
+        "references/showcase-contribution.md": "sha256:03f2365d1ab0dc755f350034efae542fb7940852b3afaae566a02c600cfb52cc",
         "references/svg-production.md": "sha256:062da9b8a552b5674ca3e79fbe04c02302d0ee5c6f61a24e3db2e64a61f58198",
         "references/visual-direction.md": "sha256:09b1d2bf38e375ffa2a1d6b337ce5b649c38a9118d9f4242837e8979f3bb4912",
         "scripts/audit_readme.py": "sha256:266d4ff92b9cb7ea78b48a2d26ed628940a09ee6d71c74881275567b0d2828ed",
         "scripts/render_motion_gif.py": "sha256:e7332f450943c6ea604fb724159ecac5826614382f9dbeffe274d8ae68a669b5",
-        "SKILL.md": "sha256:f3854a1ff509d26f44e5e6a7547a3670e1d2733987d6b300ddcc68c1a17aa14b"
+        "SKILL.md": "sha256:e089c9aafb973ea5004f9d18fc0a4b2ecbce50b47e36a9b740d042998be28f02"
       }
+    },
+    {
+      "name": "bilibili-skill",
+      "mode": "inline",
+      "source": {
+        "kind": "github",
+        "repo": "justinzm/bilibili_skill",
+        "subpath": "",
+        "commit": "70933b0635f5143833fb6cf8d2c882205d0f2392",
+        "label": "上游参考；本地安全改造工具",
+        "path": "tools/bilibili-skill"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 2：按需检索 B 站视频、限定 UP 主并读取有权访问的字幕；只向用户呈现最相关资料",
+      "license_note": "上游 README 声明 MIT，但未发现 LICENSE 文件；本目录新增工具不含上游源码，复用前仍需核对",
+      "credentials": "扫码登录；Cookie 与刷新令牌仅存 Windows 凭据管理器 codex/bilibili-research/session，不写入仓库或日志"
     },
     {
       "name": "citycraft",
@@ -79,6 +112,46 @@
       }
     },
     {
+      "name": "design-reference-library",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "codex",
+        "rel": "design-reference-library"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 2：优先现成官方接口；仅四个本地适配器已验收，在线库按需读取选中条目，未核实来源只留链接",
+      "digest": "sha256:83ab9949fb649a1a5228f90a6bfd2684e1079b8ac042b451cc17ed3f82c64653",
+      "files": {
+        "adapters.json": "sha256:83e49ecf0d6709c49f7972f5799bdbfe5fd1c4fef7fd12d02719e423aeff944e",
+        "catalog.json": "sha256:f542dbc30a649891366a806fb8ea087fffd6a31acca2cf70fb53c077683b1f72",
+        "patterns.json": "sha256:f9936ec8498841d706933210fc6f1707b55ce0f77b9ff7cda17cf41b75f70fd6",
+        "references/adapters.md": "sha256:066f0ebb8eb0b0ac19011d82c86f8c007dfc5d86e503a8a6ba25249a2eccd7cd",
+        "references/ant-design-pilot.md": "sha256:83e62c582184c386113db5be8b720b9dca1760e90068195e5bf778a805ef0de2",
+        "references/apg-pilot.md": "sha256:a6f32939b6bd180f8fcaf785269ff64cc101fe48b3b001c811873515a21c0877",
+        "references/catalog-schema.md": "sha256:2c46daf5b27dc40720c17341b9b67a886ffb49f8dded43e963c0375911c15823",
+        "references/design-md-pilot.md": "sha256:a456b19276177c482264640c02d29dc27b00525c15f5281217fb15f07fd6ebd4",
+        "references/react-bits-pilot.md": "sha256:8a0bc767ceb8b8c8c656d5c5596199f910b992ec13103d0223382bd21919a494",
+        "references/sources.md": "sha256:80c7412947b2e07e159a1cf274db3083130069dd6f0a524366eeeb44cc4a96ef",
+        "scripts/ant_design.py": "sha256:fdd27fe45cd0b02ce60353d97880d42b5b95b8c2cb090caa2e4f32e01f30b948",
+        "scripts/ant_design_preview.py": "sha256:9de4f248eceabf22f2a2cadf6b50ba63b9777c60dc61d0e93d40a1ef8ffedafa",
+        "scripts/apg.py": "sha256:e91d9be8aa9f2ca1c36aaccbea103a9177e07f3d6e9dbba308c088dcbe49ddfb",
+        "scripts/apg_preview.py": "sha256:26827b246f2637b8fbfdb4d068769ccc66ad0d9248dc720dd21235dd63eacbbc",
+        "scripts/check_catalog.py": "sha256:2133633684bf89581561dc425e06f75d1f474355c21abe3f70f1b917cb131dd5",
+        "scripts/design_md.py": "sha256:3bad069ab7c2a993604e65b2b64088b86e65b4d63e7c5caceee1b2f8838a39f6",
+        "scripts/react_bits.py": "sha256:bd0fde6353c9971e74869705396d8fbf488ef49feb6a40143caa196cdc3fa1cd",
+        "scripts/react_bits_preview.py": "sha256:b75ffe1ad252e90a569acbab59f1afbb0eb6b9223ace69aaf8eb833dfba826b7",
+        "scripts/requirements-apg.txt": "sha256:5d5a0f18f989ef2b52a8af3f5ab337893a1a1305266bbdbc11536c80ee3ac5ef",
+        "scripts/search_references.py": "sha256:be8691281dceed3ebfe38f12dbad3dad14e6ee0217d4dd0c105074d930f02b39",
+        "scripts/test_ant_design.py": "sha256:057cbb9924767ad4cb14c83b25823ef02131e87383ddfef1f3988c1838910f2d",
+        "scripts/test_apg.py": "sha256:d5347a9e0767bd092c6d4b040123c482e9c2a0b4a644e11fccce1ecd62e827e4",
+        "scripts/test_design_md.py": "sha256:2a5a324d4d779aec29a709b904c71fb69d4f7678b6b878bb2470c468075c3f09",
+        "scripts/test_react_bits.py": "sha256:367fbaecc4c0a2d8cb880f623c0ceafbc97af94c8ce821a12b87437d2ff34c31",
+        "SKILL.md": "sha256:2941ba44cc46122c9008aa9d42344da03c6f67122bb1c0611e47383bdcddf913"
+      }
+    },
+    {
       "name": "documents",
       "mode": "inline",
       "source": {
@@ -86,8 +159,42 @@
         "provider": "documents",
         "label": "插件 documents"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ④：Word / .docx 文档，带渲染校对；随 App 提供"
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-5：Word 文档的样板、完整排版与渲染验收；由插件提供"
+    },
+    {
+      "name": "frontend-design",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "shared",
+        "rel": "frontend-design"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 3：全新视觉方向时补业务相关的设计原则、排版与模板感自查；不替代 oil-ui-pro",
+      "digest": "sha256:47fe54bd7cb793ad3f98ea946eff40cc4a8899516baf5d99bfce150fb62903a4",
+      "files": {
+        "LICENSE.txt": "sha256:eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549",
+        "SKILL.md": "sha256:b8009ae690dfa69edc7f08bb8715f32db8817112cfa4388741dbaf876c237df8"
+      }
+    },
+    {
+      "name": "frontend-ui-engineering",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "shared",
+        "rel": "frontend-ui-engineering"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 3、5-7：按需补组件组合、状态分层、响应式与可访问性检查；不替代 oil-frontend",
+      "digest": "sha256:5175677c8c8c14a2307ccebddceb66a6caba76f4d6a900ded4987391e03bb31f",
+      "files": {
+        "references/shared/accessibility-checklist.md": "sha256:290870b5d6b00d4e359c28c0fb98ea5ac625cd651bde3cbe276d61a39e69d743",
+        "SKILL.md": "sha256:f433fd2f53ed5310855e6c4135a0ba073818f2266e92f64b4ad561da046ff21a"
+      }
     },
     {
       "name": "image-gen",
@@ -98,8 +205,8 @@
         "root": "shared",
         "rel": "image-gen"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ③：本机生图/改图通道（默认走 MCP 的 magpie-image）",
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-4：图片与视觉素材的本机生图/改图通道",
       "digest": "sha256:107891b34bfeaa0ce59cd4e36ac23b8e999b4c76c1254ef7e252f36d0663713e",
       "files": {
         "scripts/image_gen.py": "sha256:a94ad092c2121a05de7f483352e283ecb3995bb74cd97776488614db758faa33",
@@ -111,60 +218,12 @@
       "name": "kdocs",
       "mode": "inline",
       "source": {
-        "kind": "github",
-        "repo": "kdocs-app/kdocs-skill",
-        "subpath": "",
-        "commit": "6373605f40c77956e4235e1dde7dd2d882898d1d",
-        "label": "magpie 库",
-        "root": "library",
-        "rel": "kdocs"
-      },
-      "recorded": "2026-11-13",
-      "uses": "车道 ④：在线协作文档，一句话说清怎么做，不引技能"
-    },
-    {
-      "name": "miao-visual",
-      "mode": "reference",
-      "source": {
-        "kind": "github",
-        "repo": "hayou2002/miao-visual",
-        "subpath": "",
-        "commit": "",
-        "label": "magpie 库",
-        "root": "library",
-        "rel": "miao-visual"
+        "kind": "plugin",
+        "provider": "kdocs",
+        "label": "插件 kdocs"
       },
       "recorded": "2026-11-21",
-      "uses": "阶段 1-4：画面涉及小妙或啊呜时读取个人形象基准并负责视觉素材制作",
-      "digest": "sha256:e95d3efe052115af2335e1ba4e23aa23ee78d4fcbefdd4b5ad6fe55a8b571c02",
-      "files": {
-        ".gitignore": "sha256:7b1b7b5335dc5462e9d146c6548745a41c881cf7c0e768206d15e5ec4ebdcc2b",
-        "assets/readme/hero.svg": "sha256:90c8d0e2db5572f1fc92726c1c00138dcb09340242631d7caef7d1894c96b447",
-        "assets/reference/awoo-expressions.png": "sha256:3f57e9b196b59b5fbfec5ba2441e38b4c8237cead61eb27a208f65f388927509",
-        "assets/reference/awoo-turnaround.png": "sha256:cd6cb264e2987547c69a10f44edb338ea07a07a8df83271283337713f2738517",
-        "assets/reference/character-expressions.png": "size:2325923",
-        "assets/reference/character-gestures.png": "sha256:aa5dce6d67a2aaa7f51d7a9e04201752a2f599cb92361e0a74d345d13182b903",
-        "assets/reference/character-outfits.png": "size:2204172",
-        "assets/reference/character-turnaround.png": "size:2279025",
-        "assets/reference/composite-sample.png": "sha256:a17b94bab3e5245423b8242ea31b634dc17eadc84ad81666f8c038d210aa6cdd",
-        "assets/reference/cover-layout-ref.png": "sha256:041daf80640483862ef30aa37596c86b4378094329a515977c1c9d71acaea0e9",
-        "assets/reference/dark-sample.png": "sha256:eb5d25307f74b1544bfff0999f3d97006b8f5be8965f42e2ae3947a9205b8909",
-        "assets/reference/duo-scene.png": "sha256:7a2b9cdaa6c965c2e44c52aec60ca455272e4aff6b918cc4b275f80bb51f10d5",
-        "assets/reference/master.png": "sha256:439efff91665830e39e2e4ee7a4ddfb602d20b81e0dd6a652e48469591659688",
-        "assets/reference/miao-cutout.png": "sha256:19e809aa83a58c5adc8b2141b8bfb7e72268b4d64cd517dc59ca87994ec7f8ae",
-        "assets/reference/sample-avatar.png": "sha256:4db5172f4f78ef58cd99dea32aca4d0a80018cd72e5e1396729996cf4948a5b0",
-        "assets/reference/sample-poster.png": "size:2118708",
-        "assets/svg/miao-cover-16x9.svg": "sha256:0187db4d9dcc197ad89cc45b11fcffb39dc23e2dcd029d6208d10ba26d0e4b9d",
-        "README.md": "sha256:eceed768662fb9e26b74cb590c4743a59d9079ae964a0e982b10541898e4e095",
-        "references/character.md": "sha256:d651281caddaf4ee70cb1190eb9d22fe29a9bc216de40c867620775551135890",
-        "references/integrations.md": "sha256:c8628412b081c5e89d19c4fc9ed5193ceba6de1f99ba0083e7f12581d872a053",
-        "references/prompts.md": "sha256:2c3821180fbd3fd9496b60757d0374b79bd0024a6e0bcb98a9f091b371c0cc56",
-        "references/svg.md": "sha256:294a65956541be69d0030ad38470aa8f8b27717d8d6d67fa80bb3a7cc38b1f80",
-        "references/usage.md": "sha256:e9e3e1d45761a162dc8e0e4ac20aa9dda9a37f41c9944882e997b1ec8a0fad65",
-        "scripts/check_svg.py": "sha256:8839d61fbb9d06c43054b5b6569941e393cd6540a0a7016b43b93a88569ebe57",
-        "scripts/render-svg.ps1": "sha256:6a593b0c07de8ea12722b69add93e1c2893e93e1f9556848c00a54b9d0358e37",
-        "SKILL.md": "sha256:fea59d6224ad3ca7010cab66fb9a466568f94d4b15c1535ac56b6c8366fc27fe"
-      }
+      "uses": "阶段 4-5：在线协作文档制作与交付；由插件提供"
     },
     {
       "name": "oil-art-landing",
@@ -232,8 +291,8 @@
         "root": "library",
         "rel": "oil-html"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ②：HTML 分享文档（用户点名时才用）",
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-4：用户点名 oil-html 风格时制作 HTML 分享文档",
       "digest": "sha256:7b9b05915abc7bb8bdd65cd17a5cb0e6cf1f0bc08faf4d378fdf8de606f9993b",
       "files": {
         ".gitignore": "sha256:cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e",
@@ -252,14 +311,14 @@
         "kind": "github",
         "repo": "oil-oil/oil-icon",
         "subpath": "",
-        "commit": "",
+        "commit": "2ff69465613e85da7c017873c4c52ae92e5a7bce",
         "label": "magpie 库",
         "root": "library",
         "rel": "oil-icon"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ③：成套图标（宫格生成 → 切图 → 去背）",
-      "digest": "sha256:ceaa7e8126a4252ab51fc8a649e6e0983f6ba60e9121f17f3d28d6d8deec0ab5",
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-5：成套图标的样板、完整制作与一致性检查",
+      "digest": "sha256:4bd799e1e4670c6c906a585feb291a70e40cc35a76bc3e9763b03f1977b89abb",
       "file_count": 91,
       "credentials": "默认无：生图走 MCP 的 magpie-image；也可以自己配置（自选），技能自带的 Key 配置页只在通道缺失时才用"
     },
@@ -276,9 +335,10 @@
         "rel": "oil-motion"
       },
       "recorded": "2026-11-21",
-      "uses": "阶段 3-4：视频的关键分镜、试片与连续镜头制作；界面交互动画交 oil-frontend",
+      "uses": "阶段 3-5：连续镜头与视频素材，以及素材的网页交互接入；不用于独立成片剪辑",
       "digest": "sha256:3094ace489b2ac33431995d5cd240535a8572a3b814cd4178afa1aec3403378e",
-      "file_count": 86
+      "file_count": 86,
+      "credentials": "AI 生成需要 ZenMux API Key，由技能配置页写入系统凭据库；纯本地处理不需要 Key"
     },
     {
       "name": "oil-ppt",
@@ -296,6 +356,35 @@
       "uses": "阶段 3-4：16:9 HTML 演示的关键页样板与完整制作",
       "digest": "sha256:dd2367f3de6970830c67ba066e01f9d07f9b9d8432d988a0ed3c2666e1678bd4",
       "file_count": 71
+    },
+    {
+      "name": "oil-showcase",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "codex",
+        "rel": "oil-showcase"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 6：用确定性本地脚本截取真实页面或组件，生成展示卡与离线总览",
+      "digest": "sha256:1d99ed43e3e7a5b7284f3fe46c531d2264629f452f6da35367696418bef123b4",
+      "files": {
+        "assets/fonts/fonts.css": "sha256:00756a45aea62d7b7010bfce79093f918193a62d11f8315d0acbb03cdfef8bb0",
+        "assets/fonts/inter-400.woff2": "sha256:c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+        "assets/fonts/inter-500.woff2": "sha256:c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+        "assets/fonts/inter-600.woff2": "sha256:c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+        "assets/fonts/jetbrains-mono-400.woff2": "sha256:2c32b9b3ee358c119e210f6f5195f9bd34894d78a785ff2e95d60e718e400af4",
+        "assets/fonts/jetbrains-mono-500.woff2": "sha256:2c32b9b3ee358c119e210f6f5195f9bd34894d78a785ff2e95d60e718e400af4",
+        "assets/fonts/OFL.txt": "sha256:369001c7bc6a7ad602d8302e75881fe19c02e09d94a1910bce63ddd86da0d688",
+        "assets/fonts/playfair-display-400.woff2": "sha256:5d91eb5d522a03081946c44c8ca17c902230dfed5f0f9b5014262135d47b15b2",
+        "assets/fonts/playfair-display-500.woff2": "sha256:5d91eb5d522a03081946c44c8ca17c902230dfed5f0f9b5014262135d47b15b2",
+        "assets/fonts/THIRD-PARTY-NOTICES.txt": "sha256:d0fe4fa0f078e258cdda18c1a58112a3c5fe9d77af354e897b5d4273b4165207",
+        "references/design-system.md": "sha256:dc166d191573842514cc5bcc6081da7c5b92494027db6f5450b7b0c782badbff",
+        "scripts/render_cards.py": "sha256:c55aa870bb5c80b82112ca63d1ee747b4bb5e1196bae2f38ebfe0388903c98d8",
+        "SKILL.md": "sha256:b2218e2ed0341f9277ac110a112aa588e59925727f898350843446247f406ffc",
+        "tests/test_render_cards.py": "sha256:fb3eb7b297ad45e4a846649fd200959a847efb880b743f9dd1e7e192336398ba"
+      }
     },
     {
       "name": "oil-tone",
@@ -324,11 +413,11 @@
       "source": {
         "kind": "local",
         "label": "本机目录",
-        "root": "codex",
+        "root": "shared",
         "rel": "oil-ui-pro"
       },
-      "recorded": "2026-11-21",
-      "uses": "阶段 2-4：组织可视参考对比；网页、App、桌面应用与模块设计及视觉还原",
+      "recorded": "2026-11-25",
+      "uses": "阶段 3-4：设计契约、视觉方向与关键样板的主责技能",
       "digest": "sha256:b9897b0cfcb658b1e5480b1566145bda0916b024e1571a9d40ae46737298169d",
       "file_count": 157
     },
@@ -339,13 +428,13 @@
         "kind": "github",
         "repo": "oil-oil/oil-visual",
         "subpath": "",
-        "commit": "",
+        "commit": "65ea6acbd91574cad559cee7f111c8f0630e2182",
         "label": "magpie 库",
         "root": "library",
         "rel": "oil-visual"
       },
-      "recorded": "2026-11-13",
-      "uses": "车道 ②③：解释图与透明插画",
+      "recorded": "2026-11-21",
+      "uses": "阶段 3-5：解释图与透明插画的样板、完整制作与视觉检查",
       "digest": "sha256:05e766dda21aab4ebe936768316338b41e3c989f4e02a8f24c4643b4439af77f",
       "files": {
         ".gitignore": "sha256:53f0c100a33a56ebada040287b3d0f5dbab21c6ec6b66209fec5515c508f1144",
@@ -390,6 +479,65 @@
       "uses": "车道 ④：PowerPoint / PPTX 幻灯片文件；随 App 提供"
     },
     {
+      "name": "project-map",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "hayou2002/project-map",
+        "subpath": "",
+        "commit": "",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "project-map"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 5：按需将页面地图和结构化项目状态渲染为可更新的项目导览",
+      "digest": "sha256:cc5536191007d89ba3a5ffb946d36bf6a9e9e55d89cbcc53b21f6eeef286b06e",
+      "files": {
+        ".gitignore": "sha256:13de9c41741a0f623fd6e74934e7372c3a8c6f0544cfe1a71112c85c6edd5405",
+        "assets/paper-texture.png": "sha256:3aa411635243064ee677bb034a1ec6e0c00019fecbbf1dc6a356f8318fdbdc84",
+        "assets/readme/hero.svg": "sha256:f2fedaaf899847910d0724f3d66040885765088add5f3c53574ed04a27bdf910",
+        "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
+        "README.md": "sha256:8e33502f6a9dc1f16d8ba83aa69975232c9210d4fbb5c62e05153e7acf548ff2",
+        "recipes/comparison.md": "sha256:a03ada1e7f01b09d3d556b24c5351236602fbaf16f35c9b15306aee1712723b3",
+        "recipes/issue-board.md": "sha256:d0690b82f961a9431add5ce8a2d9659de9cc6c5f4b570cffcedfccd587fad8cd",
+        "recipes/module-map.md": "sha256:ef6957e4bd183bb4fcd26a409ef7926c3572ced1c14e1f197e00b201781ddf79",
+        "recipes/progress.md": "sha256:fddc5a930ead91b4ca4a23a0ce502c53e86f3387fbf6d7a28f5eefad198fdc7a",
+        "recipes/roadmap.md": "sha256:c734dd712e650578daaf132667c08402c43e0cdb868560547d0d80d1d86d9fd7",
+        "recipes/status-table.md": "sha256:bd591d71d2e9eb32e46211265b954c42c7391edcd53b69866bce791b471ceddf",
+        "references/hana-style.md": "sha256:f7edaef2ad8f18cc19f1dbb248dd7e98f5bb8405e4a420ee27050fc00da0a17e",
+        "references/house-style.md": "sha256:51d16301307425032aea5349b8504c4bd7f95bf8abb95683937112f8decd7293",
+        "references/notice.md": "sha256:5b307440ff34a151da989c70181a00733b19e8d6c8506a645776f966600207d3",
+        "references/recipe-selection.md": "sha256:115e2d1da5d2526dc596e5eb1b1d9c9975365c3f2301e5ffd9d5c37201ab4bbf",
+        "references/style-recipes.md": "sha256:6ebca2ac9b5bd045b0285cc805c924ffb4a39dd8deaeb17f05d4bc6fd3d44919",
+        "scripts/build_templates.py": "sha256:8e4b5d040f43ea258c0ce15f17cfe652ce8f89898c3dfc3772e6a75fb3846b2e",
+        "SKILL.md": "sha256:9a91569aa2ea5d26c4dfc0c7b1a0c2dd193c0208a1ec2bb85baf9a3e6b2cf57c",
+        "templates/comparison.html": "sha256:7109fb76f603c985d6f3478aa0d809d0cc90c291e9f7523ee92907d9dba0adcf",
+        "templates/issue-board.html": "sha256:138c05595c0268dcf1d93683f2e229514ed80fad62bd4b6a4d9ce0370b45e4c4",
+        "templates/module-map.html": "sha256:ef9966e8954e943f1680ff918ef000781ef968133e89fe9f26dd3bc2eb95c5e5",
+        "templates/progress.html": "sha256:293ffe70ec5a9215fa0ebc3b1ce07b653b342363374586ccb5dbb27b8c0c5ecb",
+        "templates/roadmap.html": "sha256:b0a9d326154953bd3859cdd2f53d13dd4e37695cfc411c0355481a9c4c5726e1",
+        "templates/status-table.html": "sha256:53049750ef2ab648c519d2270b4651dec76ad306a33faef8b87829f7df22852a"
+      }
+    },
+    {
+      "name": "review-animations",
+      "mode": "reference",
+      "source": {
+        "kind": "local",
+        "label": "本机目录",
+        "root": "shared",
+        "rel": "review-animations"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 7：存在界面动效时显式调用，输出问题、修复建议与通过或阻断结论",
+      "digest": "sha256:c6d5179d7ea2e820428fe22149a3afb04896eb57ad73380b668b37017445067f",
+      "files": {
+        "SKILL.md": "sha256:665d19fe80592bf7c9d0b073c2fed287ee86eee0c8197f2dfd82fb217aa65b57",
+        "STANDARDS.md": "sha256:d1c6981a99ca5b4bd10f932e56becabdc41b60f3426600c180b82f119ba9b26d"
+      }
+    },
+    {
       "name": "spreadsheets",
       "mode": "inline",
       "source": {
@@ -399,6 +547,28 @@
       },
       "recorded": "2026-11-13",
       "uses": "车道 ④：表格文件；随 App 提供"
+    },
+    {
+      "name": "vibehub",
+      "mode": "reference",
+      "source": {
+        "kind": "github",
+        "repo": "oil-oil/vibe-hub-skill",
+        "subpath": "skills/vibehub",
+        "commit": "aa2f2add8397daae06c55f9ca9d75dc7eee6c08d",
+        "label": "magpie 库",
+        "root": "library",
+        "rel": "vibehub"
+      },
+      "recorded": "2026-11-25",
+      "uses": "阶段 1-2：把模糊需求转成专业、可验收的表达，提供术语解释与 VibeHub 导航",
+      "digest": "sha256:0fd2989d222e89745818d7e51876277be090cbf0f28e9e9e830ed36553494f7f",
+      "files": {
+        "agents/openai.yaml": "sha256:18d92bcac85cc90093638a6835d79836e18dc398c605df17b8a3bd18d24350ad",
+        "scripts/vibehub.mjs": "sha256:2fa5e50399647f82a8a7837e04669eef22be1922a8d749d56e6e85b36ef5926f",
+        "SKILL.md": "sha256:51587bb757227f9653106d6db10e77bd12740f4d22de604759a957f1bc024e86",
+        "vibehub.config.json": "sha256:d1ec9be8d2037ba1400757fdd732fd9e793757cc51ddc59cfd5c1f2de3e50457"
+      }
     },
     {
       "name": "web-design-guidelines",
@@ -431,11 +601,37 @@
         "root": "library",
         "rel": "wf-agent-team"
       },
-      "recorded": "2026-11-21",
-      "uses": "阶段 2-4：视觉方向、第一版与复查的专项小队",
-      "digest": "sha256:f2124497b5c08e904cb4b24f104de5662b68194229d74c124f888ccfdeafae39",
-      "file_count": 1026
+      "recorded": "2026-11-25",
+      "uses": "阶段 5-7：经用户逐批授权后组织设计、执行与审查；主控始终负责验收",
+      "digest": "sha256:31208b14462b0accd7a11032df566149da1c43a63f59ea5478ffa96e0f5d3a0a",
+      "files": {
+        ".gitignore": "sha256:b7907b09bc6cea34dfd3a8e644e1be37bf94b54c367d39e016eea3dfbf38409b",
+        "agents/Designer.toml": "sha256:e74d93a6c03d6591ce0d641e5c45d1d2e4045615f33a94c8e93043bbec31a115",
+        "agents/Executor.toml": "sha256:98155129c1c318681fa2d66f7eaf70ddc4ed24e0eae6ccbbd1e0f8e0f51c8c06",
+        "agents/ExpertAdvisor.toml": "sha256:7ae1b14ae57e84fc52899f8c67ae399421bec0c82e301505e7b962bad41fc6df",
+        "agents/Explorer.toml": "sha256:c922a99183b7b95a298b4caf82106689cf53b70d9b805701bee20d6e1fd345af",
+        "agents/Reviewer.toml": "sha256:56936ec99f36873925f12247c9b159076b620e0707493c6b5ad8f1b543306e31",
+        "assets/readme/hero.svg": "sha256:46ea9cf90a935465fb298ca221defb9b35f88e6bd607503150128c6f73533f08",
+        "LICENSE": "sha256:f435b27ecc295bf62191ae26ea5eeb292c7cf864a15a52406fb38ff83c4c0c22",
+        "README.md": "sha256:d1a41240e0ef29f811b238ec5526a9b602fa67ccb0c79b216c2ca2af20b4cc05",
+        "references/backends.md": "sha256:4bfb9979c3937774980edd64c0559004cc86e45333e536a90d96de63521c8937",
+        "references/default-sentinel.toml.example": "sha256:efb17dab35669dfda8cdae704f790e655c93ac9bc7706a974022a87d5fab2067",
+        "references/environment.md": "sha256:6c771f7524e2928411e28c7075aed5f2101212cb55e8af4e041cccdf750301db",
+        "references/habits.md": "sha256:551aa995f2d5db128f00cb88e12c67b6e067a5c0f2c2e1c694ce52ba98e223c2",
+        "references/playbook.md": "sha256:93abea934ee4b3e9a28897de9d4b4713eabee33c0aa261ca91006d6a58b84df6",
+        "references/roles.md": "sha256:015df43c78d3f4c0d07a1e49ff863ab110436d6df7d95a9a7c4b2580d1801a77",
+        "references/setup.md": "sha256:2ff1b6bc878fb53b27f3085f5be1016ffd8f0abe58a9ec3c215aa532920ba21e",
+        "references/sops/_template.md": "sha256:0b5f656d2bceabfb533a3c11b0f1e45e42eeec2f81c05e6be6fcc46ea5c211ce",
+        "references/sops/handoff.md": "sha256:10d968bcd69ae37f320d47427dd35f147b744c8c1ab92cea8eb1c350656c4ec5",
+        "references/sops/index.md": "sha256:41430c5e45aafc56aa39b2e4bfd110b6a79386d87da5e3bbce22249f07b52071",
+        "references/sops/vibecode.md": "sha256:b6b5c338353cb4a41c325b09c28490e3fb51aa8ea09acdcd61cc866de566c0fd",
+        "scripts/check_handoff.py": "sha256:f6b83ee86607eb8405c3127f5531cba628629246c827382f0cb9318e577df656",
+        "scripts/ensure_agent_effort.py": "sha256:d23fb3df7a45a6163262e45f82da2a1151ca74622caa67455874e6cc85f10a6b",
+        "scripts/preflight.py": "sha256:56e84d02b3398022b7f7d30698ff79544e0aa8401de63142a61f8110be9ad94c",
+        "SKILL.md": "sha256:e09961f7d02421a84ebd18eb15e822afa65f89caddb2d54e59daacb98d8dce6b",
+        "sources.json": "sha256:e997dd10706fc1019f5d799ac5c98faf10ef51321a8ca95392f4be62f2c96505"
+      }
     }
   ],
-  "env_digest": "4c669dbbab6e54832c38a8bbe8406795db17b2766b6f625ccf820a2386cc120b"
+  "env_digest": "e103743baf3edd903545253419f19ba7a5eb005217c7a225b93aaa8149dd5eb6"
 }
